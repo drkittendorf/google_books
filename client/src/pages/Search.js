@@ -14,7 +14,7 @@ class Search extends Component {
     // Getting the value and name of the input which triggered the change
     let value = event.target.value;
     const userInput= event.target.value;
-    console.log(value);
+    // console.log(value);
     // Updating the input's state
     this.setState({
       userInput: value,
@@ -24,7 +24,7 @@ class Search extends Component {
   handleFormSubmit = event => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
-    // console.log ("this runs on click")
+    console.log ("this runs on click from Search.js")
      this.setState({
       userInput: ''
     });
@@ -32,7 +32,7 @@ class Search extends Component {
 
     API.searchGoogleBooks(this.state.userInput)
      .then ( data => {
-       console.log(data.data.items)
+       console.log("line 35 Search.js",data.data.items)
        let gbObject = data.data.items
           this.setState({ bookSearchResults: [...gbObject]})
       })}

@@ -1,38 +1,32 @@
-// import React from 'react'
 import './pages.css'
 import API from "../utils/API";
 import React, { useState } from "react";
 import { GformBtn } from "../components/Form";
+// import (handleGformSubmit) from "./AddGoogleBooks";
 
 export default function BookCard(props) {
      const [books, setBooks] = useState([])
      
-    // this code copied from books.js    7-24
+    
      function loadBooks() {
-        
         API.getBooks()
-          .then(res => 
-             setBooks(res.data)
-          )
+          .then(res => setBooks(res.data))
           .catch(err => console.log(err));
       };
                  
-    function handleGformSubmit(event) {
-        event.preventDefault();
-        console.log("line 23 from BookCard.js", props)
-         API.saveBook({
-            key: props.i,
+    function handleAddGBook(e) {
+        e.preventDefault();
+        console.log("line 19 from BookCard.js", props)
+        API.saveGbook({
             title: props.title,
-            image: props.image,
             subtitle: props.subtitle,
-            // author: props.author,
-            date: props.publishedDate,
+            author: props.author.i,
             description: props.description,
+            date: props.publishedDate,
+            image: props.image,
             link: props.link
           })
-            .then(res => loadBooks())
-            .catch(err => console.log(err));
-     };
+    };
 
     return (
         <div className='card-container'>
@@ -48,7 +42,7 @@ export default function BookCard(props) {
                 <a href={props.link} target="_blank" rel="noopener noreferrer">Google Book link to: {props.title}</a> 
                 <form>
                 <GformBtn
-                  className='button' onClick={handleGformSubmit} 
+                  className='button' onClick={handleAddGBook} 
                   >
                  Add to List
                 </GformBtn>

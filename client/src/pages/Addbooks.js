@@ -6,25 +6,22 @@ import { Col, Row, Container } from "../components/Grid";
 // import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 
+
 function Books() {
-  // Setting our component's initial state
-//   const [books, setBooks] = useState([])
+  // Setting our component's initial values
 const initialFormObjectState = {
-    title: "Title (required)",
-    author: "Author (required",
+    title: "",
+    author: "",
     synopsis: ""
   };
-
+// Setting up the state
 const [formObject, setFormObject] = useState({...initialFormObjectState})
-  
-  // Load all books and store them with setBooks
-//   useEffect(() => {
-//     loadBooks()
-//   }, [])
- 
  
   const clearState = () => {
-    setFormObject({...initialFormObjectState });
+    console.log(formObject);
+    setFormObject(initialFormObjectState);
+        console.log("reset triggered")
+    console.log(formObject);
   };
 
   // Loads all books and sets them to books
@@ -58,7 +55,6 @@ const [formObject, setFormObject] = useState({...initialFormObjectState})
     // console.log(formObject)
   };
 
-
     return (
       <Container fluid>
         <Row>
@@ -70,17 +66,20 @@ const [formObject, setFormObject] = useState({...initialFormObjectState})
               <Input
                 onChange={handleInputChange}
                 name="title"
-                placeholder={formObject.title}
+                placeholder="title (required)"
+                value={formObject.title}
               />
               <Input
                 onChange={handleInputChange}
                 name="author"
-                placeholder={formObject.author}
+                placeholder="author (required)"
+                value={formObject.author}
               />
               <TextArea
                 onChange={handleInputChange}
                 name="synopsis"
-                placeholder={formObject.synopsis}
+                placeholder="synopsis(Optional)"
+                value= {formObject.synopsis}
               />
               <FormBtn
                 disabled={!(formObject.author && formObject.title)}
@@ -95,3 +94,7 @@ const [formObject, setFormObject] = useState({...initialFormObjectState})
 
 
 export default Books;
+  // Load all books and store them with setBooks
+//   useEffect(() => {
+//     loadBooks()
+//   }, [])
