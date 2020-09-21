@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 1.5 rem;
+}
+
+.card-container {
+    /* display: flex;
+    flex-flow: row-reverse;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    align-content: center;
+    justify-content: center;
+    width: 22vw;
+    border: 2px solid black;
+    box-shadow: 10px 10px #888888;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.button {
+   border-radius: 10px;
+   top: 10px;
+   right:10px;
+   position: absolute;
+}
+
+.list {
+    display: grid;
+    margin: 20px 0 25px 0;
+    grid-template-columns: repeat(4, 2fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 1 rem;
+}
+
+img {
+    width: auto;
+    height: 25vh;
+}
