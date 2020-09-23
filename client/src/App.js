@@ -18,25 +18,25 @@ function App() {
         <Header />
         <Nav />
         <Switch>
-          <Route exact path={["/", "/books"]}>
+           <Route exact path={["/", "/books"]}>
         <Addbooks />
-          </Route>
-          <Route exact path="/books/:id">
+           </Route>
+           <Route exact path="/books/:id">
         <Detail />
-          </Route>
-          <Route exact path='/search'>
+           </Route>
+           <Route exact path='/search'>
         <Search />
-          </Route>
-          <Route>
-        <Bookslist />
-          </Route>
+           </Route>
+           <Route>
+        <Bookslist/>
+           </Route>
            <Route>
         <NoMatch/>
           </Route>
-         <Route>
+          <Route>
         <Gbooks/>
           </Route>
-         </Switch>
+        </Switch>
         <Footer />
       </div>
     </Router>

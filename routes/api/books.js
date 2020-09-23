@@ -21,10 +21,9 @@ router
     .post(gbooksController.create);
   
   // Matches with "/api/gbooks/:id"
-  router
-    .route("/gbooks/:id")
+  router.route("/gbooks/:id")
     .get(gbooksController.findById)
     .put(gbooksController.update)
     .delete(gbooksController.remove)
 
-module.exports = router;
+    module.exports = router;

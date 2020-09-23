@@ -2,30 +2,38 @@ import './pages.css'
 import API from "../utils/API";
 import React, { useState } from "react";
 import { GformBtn } from "../components/Form";
-// import (handleGformSubmit) from "./AddGoogleBooks";
+
+
 
 export default function BookCard(props) {
      const [books, setBooks] = useState([])
      
     
-     function loadBooks() {
-        API.getBooks()
-          .then(res => setBooks(res.data))
-          .catch(err => console.log(err));
+    function loadGbooks() {
+    console.log ("is this hit? line 13 Bookcard", (books))
+    API.getGbooks()
+        .then(res => setBooks(res.data))
+         
+        .catch(err => console.log(err));
       };
                  
     function handleAddGBook(e) {
         e.preventDefault();
         console.log("line 19 from BookCard.js", props)
+        //saveGbook goes to Utils/Api.js saveGbook
         API.saveGbook({
             title: props.title,
             subtitle: props.subtitle,
             author: props.author.i,
             description: props.description,
-            date: props.publishedDate,
+            date: props.date,
             image: props.image,
             link: props.link
           })
+           //book data returned from axios
+          .then(res => loadGbooks(res))
+          .then(console.log("line 35 Bookcard.js this should fire after google book added to list") )
+          .catch(err => console.log(err));
     };
 
     return (
