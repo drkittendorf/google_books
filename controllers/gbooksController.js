@@ -1,6 +1,7 @@
 const db = require("../models");
-
-// Defining methods for the booksController
+//! Controllers manipulates the model they are used by the user
+//! Controllers store APIs of the app
+// Defining methods for the gbooksController
 module.exports = {
   findAll: function(req, res) {
     db.Gbook

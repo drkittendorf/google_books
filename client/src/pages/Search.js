@@ -24,7 +24,7 @@ class Search extends Component {
   handleFormSubmit = event => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
-    console.log ("this runs on click from Search.js")
+    console.log ("this runs on click from line 27 Search.js")
      this.setState({
       userInput: ''
     });

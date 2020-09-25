@@ -18,8 +18,7 @@ router.route("/gbooks")
   .post(gbooksController.create);
 
 // Matches with "/api/books/:id"
-router
-  .route("/gbooks/:id")
+router.route("/gbooks/:id")
   .get(gbooksController.findById)
   .put(gbooksController.update)
   .delete(gbooksController.remove);
