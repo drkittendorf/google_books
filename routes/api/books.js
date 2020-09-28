@@ -3,7 +3,7 @@ const booksController = require('../../controllers/booksController');
 const gbooksController = require('../../controllers/gbooksController');
 
 // Matches with "/api/books"
-router.route('/')
+router.route('/') //!server side endpoints
   .get(booksController.findAll)
   .post(booksController.create);
 

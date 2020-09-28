@@ -4,10 +4,10 @@ const Schema = mongoose.Schema;
 const gbookSchema = new Schema({
   title: { type: String, required: true },
   subtitle: {type: String, required: false},
-  author: { type: String, required: true },
+  author: { type: [String], required: true },
   description: String,
   date: String,
-  image: String ,
+  image: String,
   link: String
 });
 

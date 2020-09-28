@@ -13,12 +13,12 @@ const router = require("express").Router();
 const gbooksController = require("../../controllers/gbooksController");
 
 // Matches with "/api/books"
-router.route("/gbooks")
+router.route("/Gbooks")
   .get(gbooksController.findAll)
   .post(gbooksController.create);
 
 // Matches with "/api/books/:id"
-router.route("/gbooks/:id")
+router.route("/Gbooks/:id")
   .get(gbooksController.findById)
   .put(gbooksController.update)
   .delete(gbooksController.remove);

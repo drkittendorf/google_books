@@ -1,6 +1,6 @@
 const db = require("../models");
 
-// Defining methods for the booksController
+// Defining methods for the booksController dbmodel represents all the books in json format
 module.exports = {
   findAll: function(req, res) {
    console.log("something hit line 6 booksController.js: terminal log") // the saved booklist will hit this && delete
