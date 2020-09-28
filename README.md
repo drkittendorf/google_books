@@ -1,0 +1,22 @@
+## APP URLS
+https://drkittendorf.github.io/21_google_books/ <br>
+https://frozen-atoll-65218.herokuapp.com/ <br>
+https://github.com/drkittendorf/21_google_books
+
+
+## CONTRIBUTORS
+* Dale Kittendorf
+
+## USER STORY
+  AS A SOFTWARE DEVELOPER CONSTANTLY LEARNING NEW SKILLS, 
+  I WANT A RESOURCE TO SAVE USEFUL LINKS AND CODE SNIPPETS, THAT IS BROWSER INDEPENDENT,
+  I ALSO WANT OTHER DEVELOPERS TO BE ABLE TO ACCESS AND SAVE THESE LINKS AND SNIPPETS.
+
+## SCREENSHOTS
+  ![screenshot1] 
+
+## VIDEO
+
+## FOR FURTHER DEVELOPMENT
+
+

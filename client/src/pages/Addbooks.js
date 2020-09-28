@@ -63,6 +63,10 @@ const [formObject, setFormObject] = useState({...initialFormObjectState})
               <h1>What book title would you like to add to your list?</h1>
             
             <form>
+            <FormBtn
+                disabled={!(formObject.author && formObject.title)}
+                onClick={handleFormSubmit}> Submit Book
+            </FormBtn>
               <Input
                 onChange={handleInputChange}
                 name="title"
@@ -81,10 +85,7 @@ const [formObject, setFormObject] = useState({...initialFormObjectState})
                 placeholder="synopsis(Optional)"
                 value= {formObject.synopsis}
               />
-              <FormBtn
-                disabled={!(formObject.author && formObject.title)}
-                onClick={handleFormSubmit}> Submit Book
-              </FormBtn>
+              
             </form>
           </Col>
         </Row>

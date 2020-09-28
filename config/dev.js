@@ -1,2 +1,2 @@
-module.exports = {
-     mongoURI: ''}
+// module.exports = {
+//      mongoURI: ''}
