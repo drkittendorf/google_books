@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-function Nav() {
+function Footer() {
     const mystyle = {
         display: "flex",
         justifyContent: 'center',
@@ -11,8 +11,7 @@ function Nav() {
         padding: '10px',
         fontsize: '1.25rem',
         textDecoration:"none",
-       
-                    
+          
     };
 
   return (
@@ -30,4 +29,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Footer;

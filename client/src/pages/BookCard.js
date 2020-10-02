@@ -23,7 +23,7 @@ export default function BookCard(props) {
         API.saveGbook({
             title: props.title,
             subtitle: props.subtitle,
-            author: props.author.i,
+            authors: props.authors,
             description: props.description,
             date: props.date,
             image: props.image,
@@ -46,7 +46,7 @@ export default function BookCard(props) {
                 <div className='desc'>
                 <h2>{props.title}</h2>
                 <h4>{props.subtitle}</h4>
-                <h3>{props.author}</h3>
+                <h3>{props.authors}</h3>
                 <h4>Published Date: {props.date}</h4>
                 <p>{props.description}</p>
                 <a href={props.link} target="_blank" rel="noopener noreferrer">Google Book link to: {props.title}</a> 

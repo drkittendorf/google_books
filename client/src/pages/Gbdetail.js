@@ -25,12 +25,15 @@ function Gbdetail(props) {
           <a href={gbook.link} target='_blank' rel="noopener noreferrer">
           <img src={gbook.image} alt={gbook.title} title={gbook.title}/>
           </a>
-                
                 <h2>{gbook.title}</h2>
-                <h4>{gbook.subtitle}</h4>
-                <h3>{gbook.author}</h3>
-                <h4>Published Date: {gbook.date}</h4>
+
+                {/* <h4>{gbook.subtitle}</h4> */}
+
+                <h3>{gbook.authors}</h3>
+                {console.log("GBDETAILS",gbook)}
                 <p>{gbook.description}</p>
+                <h6>Published Date: {gbook.date}</h6>
+
                 <a 
                 href={gbook.link} target="_blank" 
                 rel="noopener noreferrer">

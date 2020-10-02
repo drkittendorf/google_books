@@ -56,17 +56,14 @@ const [formObject, setFormObject] = useState({...initialFormObjectState})
   };
 
     return (
-      <Container fluid>
+      <Container fluid align='center'>
         <Row>
-          <Col size="md-6">
+          <Col size="sm-6" >
             
-              <h1>What book title would you like to add to your list?</h1>
-            
-            <form>
-            <FormBtn
-                disabled={!(formObject.author && formObject.title)}
-                onClick={handleFormSubmit}> Submit Book
-            </FormBtn>
+              <h2>What book title would you like to add to your list?</h2>
+           
+            <form className='card-container3' align='center'>
+           
               <Input
                 onChange={handleInputChange}
                 name="title"
@@ -85,8 +82,12 @@ const [formObject, setFormObject] = useState({...initialFormObjectState})
                 placeholder="synopsis(Optional)"
                 value= {formObject.synopsis}
               />
-              
+               <FormBtn
+                disabled={!(formObject.author && formObject.title)}
+                onClick={handleFormSubmit}> Submit Book
+                </FormBtn>
             </form>
+            
           </Col>
         </Row>
       </Container>

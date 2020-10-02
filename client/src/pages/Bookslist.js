@@ -11,7 +11,7 @@ function Bookslist() {
   const [books, setBooks] = useState([])
   const [gbooks, setGbooks] = useState([])
   
-  // Load all books and store them with setBooks
+  //! Load all saved books and store them with setBooks
   useEffect(() => {
     loadBooks()
   }, [])
@@ -21,7 +21,7 @@ function Bookslist() {
   }, [])
 
 
-  // Loads all books and sets them to books
+  //! Loads all books and sets them to books or Gbooks
   function loadBooks() {
     API.getBooks()
       .then(res => 
@@ -33,12 +33,14 @@ function Bookslist() {
   function loadGbooks() {
     API.getGbooks()
       .then(res => 
+        {console.log("console from Bookslist.js", res)
         setGbooks(res.data)
-      )
+        })
+
       .catch(err => console.log(err));
   };
 
-  // Deletes a book from the database with a given id, then reloads books from the db
+  //! Deletes a book or Google Book from the database / Book List with a given id, then reloads the remaining books from the db
   function deleteBook(id) {
     API.deleteBook(id)
       .then(res => loadBooks())
@@ -51,14 +53,11 @@ function Bookslist() {
       .catch(err => console.log(err));
   }
 
-
-
     return (
       <Container fluid>
         <Row>
           <Col size="md-6 sm-12">
-            
-              <h1>Books Added Manually to the List</h1>
+              <h2>Books Added Manually to the List</h2>
             
             {books.length ? (
               <List>
@@ -66,7 +65,8 @@ function Bookslist() {
                   <ListItem key={book._id}>
                     <Link to={'/books/' + book._id}>
                       <strong>
-                        {book.title} by {book.author}
+                        {book.title} by {book.author} 
+                           
                       </strong>
                     </Link>
                     <DeleteBtn onClick={() => deleteBook(book._id)} />
@@ -79,14 +79,15 @@ function Bookslist() {
             </Col>
             
             <Col size="md-6 sm-12">
-             <h1>Books added from GoogleBooks</h1>
+             <h2>Books added from Google Books</h2>
              {gbooks.length ? (
               <List>
                 {gbooks.map(gbook => (
                   <ListItem key={gbook._id}>
                     <Link to={'/gbooks/' + gbook._id}>
                       <strong>
-                        {gbook.title} by {gbook.author}
+                        {gbook.title} by {gbook.authors}
+                        {console.log("console logging book", gbook)} 
                       </strong>
                     </Link>
                     <DeleteBtn onClick={() => deleteGbook(gbook._id)} />

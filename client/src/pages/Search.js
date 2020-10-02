@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { isElementOfType } from "react-dom/test-utils";
 import API from "../utils/request";
 import BookList from './BookList'
 
@@ -36,6 +37,10 @@ class Search extends Component {
        console.log("line 35 Search.js",data.data.items)
        let gbObject = data.data.items
           this.setState({ bookSearchResults: [...gbObject]})
+    //    for (var Element of gbObject) {
+    //      console.log(Element.volumeInfo.imageLinks)
+    //    }
+       
       })}
 
     

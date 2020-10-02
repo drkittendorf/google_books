@@ -11,8 +11,6 @@ function Nav() {
         padding: '10px',
         fontsize: '1.25rem',
         textDecoration:"none",
-       
-                    
     };
 
   return (
