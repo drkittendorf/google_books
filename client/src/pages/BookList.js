@@ -9,7 +9,7 @@ export default function BookList(props) {
                     
                 return <BookCard 
                                 key={i}
-                                image={gbook.volumeInfo.imageLinks.thumbnail}
+                                image={gbook.volumeInfo.imageLinks.thumbnail? gbook.volumeInfo.imageLinks.thumbnail : 'https://via.placeholder.com/128x195'}
                                 author={gbook.volumeInfo.authors}
                                 title={gbook.volumeInfo.title}
                                 subtitle={gbook.volumeInfo.subtitle}

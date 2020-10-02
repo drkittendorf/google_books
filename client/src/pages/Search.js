@@ -13,6 +13,7 @@ class Search extends Component {
   handleInputChange = event => {
     // Getting the value and name of the input which triggered the change
     let value = event.target.value;
+    // eslint-disable-next-line
     const userInput= event.target.value;
     // console.log(value);
     // Updating the input's state

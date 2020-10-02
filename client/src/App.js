@@ -4,11 +4,12 @@ import Nav from "./components/Nav";
 import Addbooks from "./pages/Addbooks";
 import Bookslist from './pages/Bookslist';
 import Detail from "./pages/Detail";
+import Gbdetail from "./pages/Gbdetail"
 import NoMatch from "./pages/NoMatch";
 import Search from "./pages/Search";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Gbooks from "./pages/Gbooks"
+
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
            <Route exact path="/books/:id">
         <Detail />
            </Route>
+           <Route exact path="/gbooks/:id">
+        <Gbdetail />
+           </Route>
            <Route exact path='/search'>
         <Search />
            </Route>
@@ -32,10 +36,7 @@ function App() {
            <Route>
         <NoMatch/>
           </Route>
-          <Route>
-        <Gbooks/>
-          </Route>
-        </Switch>
+       </Switch>
         <Footer />
       </div>
     </Router>

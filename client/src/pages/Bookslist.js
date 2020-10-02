@@ -64,7 +64,7 @@ function Bookslist() {
               <List>
                 {books.map(book => (
                   <ListItem key={book._id}>
-                    <Link to={"/books/" + book._id}>
+                    <Link to={'/books/' + book._id}>
                       <strong>
                         {book.title} by {book.author}
                       </strong>
@@ -84,7 +84,7 @@ function Bookslist() {
               <List>
                 {gbooks.map(gbook => (
                   <ListItem key={gbook._id}>
-                    <Link to={"/gbooks/" + gbook._id}>
+                    <Link to={'/gbooks/' + gbook._id}>
                       <strong>
                         {gbook.title} by {gbook.author}
                       </strong>
@@ -94,7 +94,7 @@ function Bookslist() {
                 ))}
               </List>
             ) : (
-              <h3>No Results to Display</h3>
+              <h3>No Google Books have been added to the list</h3>
             )}
 
 

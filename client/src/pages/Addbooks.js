@@ -95,7 +95,3 @@ const [formObject, setFormObject] = useState({...initialFormObjectState})
 
 
 export default Books;
-  // Load all books and store them with setBooks
-//   useEffect(() => {
-//     loadBooks()
-//   }, [])

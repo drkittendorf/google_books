@@ -34,11 +34,13 @@ export default {
     
   },
     // Gets GOOGLE book with the given id
-    getGbook: function(id) {
+  getGbook: function(id) {
+    console.log("something hit this-- line 38 API.js")    
     return axios.get("/api/gbooks/" + id);
   },
   // Deletes the GOOGLE book with the given id
   deleteGbook: function(id) {
+    console.log("something hit this-- line 43 API.js")  
     return axios.delete("/api/gbooks/" + id);
   }  
 
