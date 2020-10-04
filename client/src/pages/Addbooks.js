@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-// import DeleteBtn from "../components/DeleteBtn";
 import API from "../utils/API";
-// import { Link } from "react-router-dom";
-import { Col, Row, Container } from "../components/Grid";
-// import { List, ListItem } from "../components/List";
+// import { Col, Row, Container } from "../components/Grid";
 import { Input, TextArea, FormBtn } from "../components/Form";
 
 
@@ -56,10 +53,10 @@ const [formObject, setFormObject] = useState({...initialFormObjectState})
   };
 
     return (
-      <Container fluid align='center'>
-        <Row>
-          <Col size="sm-6" >
-            
+    //   <Container fluid>
+    //     <Row>
+    //       <Col size="sm-6" align='center' >
+            <div className='container'>
               <h2>What book title would you like to add to your list?</h2>
            
             <form className='card-container3' align='center'>
@@ -77,9 +74,10 @@ const [formObject, setFormObject] = useState({...initialFormObjectState})
                 value={formObject.author}
               />
               <TextArea
+                // className='synopsis'
                 onChange={handleInputChange}
-                name="synopsis"
-                placeholder="synopsis(Optional)"
+                name='synopsis'
+                placeholder='synopsis(Optional)'
                 value= {formObject.synopsis}
               />
                <FormBtn
@@ -87,10 +85,10 @@ const [formObject, setFormObject] = useState({...initialFormObjectState})
                 onClick={handleFormSubmit}> Submit Book
                 </FormBtn>
             </form>
-            
-          </Col>
-        </Row>
-      </Container>
+            </div>
+    //       </Col>
+    //     </Row>
+    //   </Container>
     );
   }
 
