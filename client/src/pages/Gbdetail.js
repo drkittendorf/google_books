@@ -27,7 +27,7 @@ function Gbdetail(props) {
           </a>
                 <h2>{gbook.title}</h2>
 
-                {/* <h4>{gbook.subtitle}</h4> */}
+                <h4>{gbook.subtitle}</h4>
 
                 <h3>{gbook.authors}</h3>
                 {console.log("GBDETAILS",gbook)}

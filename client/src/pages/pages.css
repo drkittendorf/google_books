@@ -11,11 +11,11 @@
 }
 
 .card-container {
-    /* display: flex;
-    flex-flow: row-reverse;
+    /* display: flex; */
+    /* flex-flow: row-reverse;
     flex-direction: row;
-    flex-wrap: wrap; */
-    align-content: center;
+    flex-wrap: nowrap;
+    align-content: center; */
     justify-content: center;
     width: 22vw;
     border: 2px solid black;

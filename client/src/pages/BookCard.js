@@ -18,7 +18,7 @@ export default function BookCard(props) {
                  
     function handleAddGBook(e) {
         e.preventDefault();
-        console.log("line 22 from BookCard.js", props)
+        // console.log("line 22 from BookCard.js", props)
         //!saveGbook goes to Utils/Api.js saveGbook
         API.saveGbook({
             title: props.title,
@@ -31,10 +31,10 @@ export default function BookCard(props) {
           })
            //book data returned from axios
           .then(res => {
-            console.log("line 34 bookcard.js",res)
+            // console.log("line 34 bookcard.js",res)
             loadGbooks()
           })
-          .then(console.log("line 37 Bookcard.js this should fire after google book added to list") )
+        //   .then(console.log("line 37 Bookcard.js this should fire after google book added to list") )
           .catch(err => console.log(err));
     };
 
