@@ -22,7 +22,8 @@ image - The Book's thumbnail image as returned from the Google Books API
 link - The Book's information link as returned from the Google Books API
 
 ## SCREENSHOTS
-  ![screenshot1] google_books.png
+  ![screenshot1](https://github.com/drkittendorf/21_google_books/blob/master/google_books.png)
+
 
 
 
