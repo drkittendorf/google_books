@@ -1,6 +1,6 @@
 ## APP URLS
 https://drkittendorf.github.io/21_google_books/ <br>
-https://frozen-atoll-65218.herokuapp.com/ <br>
+https://dales-google-books-app.herokuapp.com <br>
 https://github.com/drkittendorf/21_google_books
 
 
