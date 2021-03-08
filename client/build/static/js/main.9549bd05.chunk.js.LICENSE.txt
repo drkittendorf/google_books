@@ -1,0 +1,13 @@
+//! Clicking The Saved Books List Link will hit this && submitting your own title
+
+//! Deletes a book or Google Book from the database / Book List with a given id, then reloads the remaining books from the db
+
+//! Load all saved books and store them with setBooks
+
+//! Loads all books and sets them to books or Gbooks
+
+//! Submitting your own title will hit this route
+
+//! deleting from Saved Books List will hit this route
+
+//!saveGbook goes to Utils/Api.js saveGbook
