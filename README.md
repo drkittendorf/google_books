@@ -111,7 +111,8 @@ The code in this project is licensed under MIT license.
 ## SCREENSHOTS AND VIDEO
 
 - ### SCREENSHOT(S)  
-        ![screenshot1](..\client\src\assets\images\google_books.png?raw=true "Google Books")
+
+![screenshot1](/client/src/assets/images/google_books.png?raw=true "Google Books")
 
 <br>
 
