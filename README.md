@@ -27,21 +27,16 @@ Dale Kittendorf
 
 ## DESCRIPTION
 
-This react website **showcases** a Google API and a Mongo Database.
+This MERN stack website **showcases** Mongo Database, Express routing, React library and Node.js runtime environment as well as a Google API.
 
 
-AS A AVID READER I WANT AN APP THAT ALLOWS ME TO SEARCH GOOGLE BOOKS AND ADD SELECTED ITEMS TO A LIST.
-THE RESULTS LIST SHOULD INCLUDE THE FOLLOWING INFORMATION.
-
-title - Title of the book from the Google Books API
-
-authors - The books's author(s) as returned from the Google Books API
-
-description - The book's description as returned from the Google Books API
-
-image - The Book's thumbnail image as returned from the Google Books API
-
-link - The Book's information link as returned from the Google Books API
+- AS AN AVID READER I WANT AN APP THAT ALLOWS ME TO SEARCH GOOGLE BOOKS AND ADD SELECTED ITEMS TO A LIST.
+- THE RESULTS LIST INCLUDES THE FOLLOWING INFORMATION.
+    - title - Title of the book from the Google Books API
+    - authors - The books's author(s) as returned from the Google Books API
+    - description - The book's description as returned from the Google Books API
+    - image - The Book's thumbnail image as returned from the Google Books API
+    - link - The Book's information link as returned from the Google Books API
 
 <br>
 
