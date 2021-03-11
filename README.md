@@ -44,9 +44,9 @@ This MERN stack website **showcases** Mongo Database, Express routing, React lib
 
 ## REFERENCE LINKS
 
-Link to **Dale's Google Books React App** deployed on Heroku - [Dale's Portfolio Application Live Link](https://dales-google-books-app.herokuapp.com/)
+Link to **Dale's Google Books React App** deployed on Heroku - [Dale's Application Live Link](https://dales-google-books-app.herokuapp.com/)
 
-Link to **GitHub Repo** used for application development - [Dale's Portfolio Application GitHub Repo](https://github.com/drkittendorf/21_google_books)
+Link to **GitHub Repo** used for application development - [Dale's Application GitHub Repo](https://github.com/drkittendorf/21_google_books)
 
 <br>
 
