@@ -27,7 +27,7 @@ Dale Kittendorf
 
 ## DESCRIPTION
 
-This MERN stack website **showcases** Mongo Database, Express routing, React library and Node.js runtime environment as well as a Google API.
+This MERN stack website **showcases** a Mongo Database, Express routing, React library and Node.js runtime environment as well as a Google API.
 
 
 - AS AN AVID READER I WANT AN APP THAT ALLOWS ME TO SEARCH GOOGLE BOOKS AND ADD SELECTED ITEMS TO A LIST.
@@ -97,6 +97,7 @@ For `future` development, I would like to incorporate the following `enhancement
 - CLEANUP SPACING ISSUES
 - ADD HAMBURGER MENU UNDER 650PX WIDTH
 - ADD GOOGLE BRANDED LOGO
+- ENHANCE APPEARANCE / STYLING
 
 ---
 
