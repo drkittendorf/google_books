@@ -111,9 +111,10 @@ The code in this project is licensed under MIT license.
 ## SCREENSHOTS AND VIDEO
 
 - ### SCREENSHOT(S)  
-        ![screenshot1](https://github.com/drkittendorf/21_google_books/blob/master/google_books.png)
+        ![screenshot1](..\client\src\assets\images\google_books.png?raw=true "Google Books")
 
 <br>
+
 
 - ### VIDEO
         (TBD)
