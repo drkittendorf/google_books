@@ -25,9 +25,11 @@ Dale Kittendorf
 
 ---
 
-## CONCEPT
+## DESCRIPTION
 
-This react website **showcases** a responsive portfolio, with information **about Dale**, including his **work** and **contact info**.
+This react website **showcases** a Google API and a Mongo Database.
+
+
 AS A AVID READER I WANT AN APP THAT ALLOWS ME TO SEARCH GOOGLE BOOKS AND ADD SELECTED ITEMS TO A LIST.
 THE RESULTS LIST SHOULD INCLUDE THE FOLLOWING INFORMATION.
 
@@ -73,8 +75,10 @@ Link to **GitHub Repo** used for application development - [Dale's Portfolio App
 
 Here is a list of all the core technologies used to develop this application.
 
+- `MongoDB  - One of the most popular NoSQL databases`
+- `Express  - A flexible backend web framework`
 - `React.js - A JavaScript library for building user interfaces`
-- `Node.js - An asynchronous event-driven JavaScript runtime`
+- `Node.js  - An asynchronous event-driven JavaScript runtime`
 
 ### CORE NODE DEPENDENCIES
 
@@ -82,7 +86,9 @@ The dependencies listed below are all the core NPM packages used throughout the 
 
 - `react-dom` - Allows serves as the entry point to the DOM and server renderers for React.
 - `react-bootstrap` - Bootstrap 4 components built with React.
-- `react-bootstrap-carousel`
+- `axios`
+- `express`
+- `mongoose`
 
 <br>
 
