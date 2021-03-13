@@ -79,7 +79,7 @@ Here is a list of all the core technologies used to develop this application.
 
 The dependencies listed below are all the core NPM packages used throughout the project.
 
-- `react-dom` - Allows serves as the entry point to the DOM and server renderers for React.
+- `react-dom` - This package serves as the entry point to the DOM and server renderers for React.
 - `react-bootstrap` - Bootstrap 4 components built with React.
 - `axios`
 - `express`
@@ -113,7 +113,7 @@ The code in this project is licensed under MIT license.
 
 - ### SCREENSHOT(S)  
 
-![screenshot1](/client/src/assets/images/google_books.png?raw=true "Google Books")
+![Screenshot](/client/src/assets/images/google_books.png?raw=true "Google Books")
 
 <br>
 
