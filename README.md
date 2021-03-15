@@ -8,7 +8,7 @@
 - [DESCRIPTION](#DESCRIPTION)
 - [REFERENCE LINKS](#REFERENCE-LINKS)
   - [Dale's Google Books React Application :: Live Link](https://dales-google-books-app.herokuapp.com/)
-  - [Dale's Google Books React Application :: GitHub Repo](https://github.com/drkittendorf/21_google_books/)
+  - [Dale's Google Books React Application :: GitHub Repo](https://github.com/drkittendorf/google_books/)
 - [CONCEPT](#CONCEPT)
 - [LANGUAGES AND TOOLS](#LANGUAGES-AND-TOOLS)
 - [CORE PROJECT TECHNOLOGIES](#CORE-PROJECT-TECHNOLOGIES)
@@ -46,7 +46,7 @@ This MERN stack website **showcases** a Mongo Database, Express routing, React l
 
 Link to **Dale's Google Books React App** deployed on Heroku - [Dale's Application Live Link](https://dales-google-books-app.herokuapp.com/)
 
-Link to **GitHub Repo** used for application development - [Dale's Application GitHub Repo](https://github.com/drkittendorf/21_google_books)
+Link to **GitHub Repo** used for application development - [Dale's Application GitHub Repo](https://github.com/drkittendorf/google_books)
 
 <br>
 
